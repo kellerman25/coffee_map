@@ -1,0 +1,9 @@
+#mapid {
+width: 1024px; 
+height: 700px;
+}
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+    background: #571857;
+    color: #ffffff;
+	}

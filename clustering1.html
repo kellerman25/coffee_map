@@ -1,0 +1,80 @@
+ <!DOCTYPE html> <!defines document to be html5>
+<html> 
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Marker Clustering</title> <!page title>
+	<style>
+		#map {
+			width: 30%;
+			height: 400px;
+			background-color: grey;
+		}
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	</style>
+</head>
+
+	<body bgcolor='E1E1E1'>
+
+	<h3>That's where I am from:</h3>
+		<div id="map"></div>
+		<script>			
+			function initMap() {
+				var Nowogard = {lat: 53.669952, lng: 15.122536}
+				var Poznan = {lat:52.410768, lng:16.911239}
+				var Brisman = {lat: 52.4099887, lng: 16.9061164}
+				var map = new google.maps.Map(document.getElementById('map'),{
+					zoom: 3,
+					center: Poznan
+				});
+
+				var marker = new google.maps.Marker({
+					position: Nowogard,
+					map: map
+				});
+
+				//Create an array of alphabetical characters used to label the markers
+				var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+
+				// Add some markers to the map.
+				// Note: The code uses the JavaScript Array.prototype.map() method to 
+				// create an array of markers based on a given 'locations' array.
+				// The map() method has nothing to do with the Google Maps API
+				var markers = locations.map(function(location, i) {
+					return new google.maps.Marker({
+						position: location,
+						label: labels[i % labels.length]
+					});
+				});
+
+				var markerCluster = new MarkerClusterer(map, markers,
+					{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+			}
+				// Add a marker clusterer to manage the markers
+
+			var Brisman = {lat: 52.4099887, lng: 16.9061164}
+			var Uno = {lat: 52.4105503, lng: 16.9019747}
+			var CzarneMleko = {lat: 52.4130728, lng: 16.8987632}
+
+			var locations = [
+			        Brisman,
+        			Uno,
+        			CzarneMleko
+        	]
+
+			
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY92qfl9lqpKADxe3d9lTFjgiYq5GHtb4&callback=initMap">
+		</script>
+		<script type="text/javascript"  src="http://home.strw.leidenuniv.nl/~tychoniec/assets/js/markerclusterer.js">
+		</script>
+
+
+	</body>
+</html> 
+

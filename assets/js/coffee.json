@@ -1,0 +1,6 @@
+var text = '{ "coffeeplaces" : [' +
+'{ "Name":"Van de Leur" , "Adress":"Breestraat 117", "lng":52.1583791, "lat":4.4897115},' +
+'{ "Name":"Chummy Coffee" , "Adress":"Breestraat 97", "lng":52.1578795, "lat":4.4904943},' +
+'{ "Name":"Borgman \& Borgman" , "Adress":"Jones" , "lng":52.1573394, "lat":4.4931078},' +
+'{ "Name":"Lebkov \& Sons" , "Adress":"Jones" , "lng":52.1669815, "lat":4.481598} ]}'
+;
