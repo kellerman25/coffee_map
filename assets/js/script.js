@@ -24,6 +24,7 @@ var text = '{ "coffeeplaces" : [' +
 '{ "Name":"Coffee Pirates" , "Adress":"Spitalglasse 17", "lng":48.2173687, "lat":16.3510373, "visited":"No", "recom":"?", "city": "Vienna", "country":"Austria"},' +
 '{ "Name":"Jonas Reindl Coffee" , "Adress":" Währinger Str. 2-4", "lng":48.214957, "lat":16.3616055, "visited":"No", "recom":"?", "city": "Vienna", "country":"Austria"},' +
 '{ "Name":"People on Caffeine" , "Adress":" Schlösselgasse 21, closed on weekends!", "lng":48.2145818, "lat":16.3528023, "visited":"No", "recom":"?", "city": "Vienna", "country":"Austria"},' +
+'{ "Name":"Kaffemik" , "Adress":" Zollergasse 5", "lng":48.1991574, "lat":16.3488001, "visited":"No", "recom":"?", "city": "Vienna", "country":"Austria"},' +
 '{ "Name":"Filtro Koffie Bar" , "Adress":"Papestraat 11" , "lng":52.07918, "lat":4.30812, "visited":"Yes", "recom":"Yes"} ]}'
 ;
 
